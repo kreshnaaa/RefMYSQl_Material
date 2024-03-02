@@ -1,0 +1,99 @@
+
+-------------
+Basics:
+------------- 
+
+rwx
+
+rwx
+
+users
+
+groups
+
+others
+
+rwx
+
+r---read
+
+w--write
+
+x--excute
+
+-- -->file
+
+d  --->directory
+
+
+
+cd---change directory
+
+
+==> Changing file/directory permissions in Linux Using ‘chmod’:
+
+1)chmod --- change mode
+
+    command----> chmod u/g/o/a/ or +/-/=  r/w/x filename/directory
+
+
+==> Changing Ownership and Group in Linux Using 'chown':
+
+1)chown --- chnage owner
+
+
+   >>For changing the ownership of a file/ :
+
+
+        command--> chown user filename
+
+
+    >>In case you want to change the user as well as group for a    file/directory
+
+        command--> chown user:group filename
+
+
+2)In case you want to change group-owner only 
+      
+     command--->chgrp group_name filename
+
+
+3)2)In case you want to new group only
+
+      command--->newgrp groupname
+
+4) In case you want total group info
+			
+      command--->groups 
+
+5) In case you want total users info
+
+      command--->users 
+
+
+
+
+
+
+
+
+  
+ 
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

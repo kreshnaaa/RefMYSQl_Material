@@ -1,0 +1,171 @@
+To Download the MySQL Server version 5.7.21, copy and paste in the ubuntu command promptu and enter
+apt-get update
+sudo apt-get install libncurses*
+wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.21-linux-glibc2.12-x86_64.tar.gz
+
+Install: MYSQL-5.7.21
+
+tar -zxvf mysql-5.7.21-linux-glibc2.12-x86_64.tar.gz
+mkdir -p /mnt/data/mysql3306/
+cp -r mysql-5.7.21-linux-glibc2.12-x86_64/* /mnt/data/mysql3306/
+mkdir -p /mnt/data/mysql3306/mysqltmp
+useradd mysql
+chown -R mysql /mnt/data/mysql3306/mysqltmp/
+cd /mnt/data/mysql3306/
+groupadd mysql
+useradd -r -g mysql -s /bin/false mysql
+chown -R mysql .
+chgrp -R mysql . 
+
+vi my.cnf 		-- go to Configuration  
+
+
+bin/mysqld --initialize --basedir=/mnt/data/mysql3306/ --datadir=/mnt/data/mysql3306/data --user=mysql --explicit_defaults_for_timestamp -- get default root pwd :kD5.O/wB53!:
+chown -R root .
+chown -R mysql data
+mkdir -p /mnt/dbfiles/
+cd /mnt/dbfiles/
+mkdir mysqllog3306
+chown -R mysql:mysql mysqllog3306
+vi /mnt/dbfiles/mysqllog3306/error.log
+cd mysqllog3306
+chown -R mysql error.log
+cd /mnt/data/mysql3306
+chown -R mysql /mnt/data/mysql3306/mysqltmp/
+bin/mysqld_safe --defaults-file=/mnt/data/mysql3306/my.cnf &
+cd support-files
+cp mysql.server /etc/init.d/mysql3306
+vi /etc/init.d/mysql3306
+	- Give basedir	and datadir paths
+cp /mnt/data/mysql3306/bin/* /usr/bin/
+mysql -uroot -p --socket=/tmp/mysql3306.sock
+set password for root@localhost=password('root');
+mysql -uroot -p --socket=/tmp/mysql3306.sock
+
+
+Configuration : 
+---------------
+
+1. 	cd /mnt/data/mysql3306/
+2.	vi my.cnf
+
+[client]
+port = 3306
+socket = /tmp/mysql3306.sock
+
+[mysqld]
+
+##General
+server-id = 1
+port = 3306
+socket = /tmp/mysql3306.sock
+basedir = /mnt/data/mysql3306
+datadir = /mnt/data/mysql3306/data
+tmpdir = /mnt/data/mysql3306/mysqltmp
+pid-file=/mnt/data/mysql3306/data/mysql3333.pid
+group_concat_max_len = 65536
+sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+table_open_cache = 2048
+max_connections = 2000
+innodb_file_per_table=1
+innodb_log_file_size = 256M
+character-set-server = utf8
+explicit_defaults_for_timestamp = 1
+federated
+log_bin_trust_function_creators=1
+
+##Global
+innodb_buffer_pool_size = 2G
+innodb_log_buffer_size= 16M
+key_buffer_size=64M
+query_cache_size=0
+tmp_table_size=8M
+max_heap_table_size=16M
+
+##Thread
+sort_buffer_size=8M
+read_buffer_size=4M
+read_rnd_buffer_size=1M
+join_buffer_size=16M
+thread_stack=1M
+binlog_cache_size=512K
+net_buffer_length=16K
+max_allowed_packet = 32M
+
+##Error, Slow & General Log
+log-output=FILE
+log-error=/mnt/dbfiles/mysqllog3306/error.log
+slow-query-log=ON
+slow_query_log_file=/mnt/dbfiles/mysqllog3306/slow.log
+long_query_time=10
+general-log=1
+general_log_file=/mnt/dbfiles/mysqllog3306/general.log
+
+##Binary & Relay Log
+
+binlog-format=MIXED
+log-bin=/mnt/dbfiles/mysqllog3306/mysql-bin.log
+log-bin-index=/mnt/dbfiles/mysqllog3306/mysql-bin.index
+max_binlog_size=104857600
+expire_logs_days = 15
+sync_binlog=1
+binlog-do-db=NextErp3
+binlog-do-db=mysql
+
+#MariaDB Audit Plugin
+
+#server_audit_logging=on
+#plugin_load=server_audit=server_audit.so
+#server_audit_events=connect,query_ddl,query_dcl
+#server_audit_output_type=file
+#server_audit_file_path=/mnt/dbfiles/mysqllog3306/server_audit.log
+#server_audit_query_log_limit=3000
+#server_audit_file_rotate_size=1073741824
+
+#Replication Configuration
+[mysqldump]
+quick
+max_allowed_packet = 64M
+
+[mysql]
+no-auto-rehash
+
+
+-----------------------------
+
+Start and Stop :
+--------------- 
+
+/etc/init.d/mysql status
+/etc/init.d/mysql stop
+/etc/init.d/mysql start
+
+
+
+
+
+
+
+
+
+echo -en '\x10' | sudo dd of=/usr/bin/gzip count=1 bs=1 conv=notrunc seek=$((0x189))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

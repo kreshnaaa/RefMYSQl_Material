@@ -1,0 +1,25 @@
+From mahipal reddy to Everyone 08:10 PM
+
+1. Benefits Of MySQL
+
+2. SQL Commands with examples
+
+3. SQL JOINS with examples
+
+4. Explain Database Normalization with eamples
+
+5. Any 10 important Functions and usage
+
+6. Indexing and its types with examples
+
+7. File Permissions in Linux  Unix How to Read, Write & Change
+
+8. GREP, AWK, SED Commands usage
+
+9. Vi Editor usage and examples
+
+10. MySQL Memory Calculator
+
+11. DCL-Data Control Language - Grant, Revoke
+
+12. MySQL Binary installation main steps

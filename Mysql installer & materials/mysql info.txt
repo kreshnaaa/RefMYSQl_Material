@@ -1,0 +1,60 @@
+1)SQL Query (Script)
+    
+2)Query Language Processor (Parser + Optimizer)
+
+3)DBMS Engine (File Manager+Transaction manager)
+
+4)Physical Database
+
+------------------------------------------------------
+
+
+En/De + cryption 
+
+RDBMS -- relational database management system
+
+DBMS
+
+--------------------------------------------------------
+
+operators 
+
+operends
+
+operators
+
+operends
+
+----------------------------------------------------------
+distinct
+
+distinct
+
+----------------------------------------------------------
+
+operators:
+
+1)Arithmetic operator
+
+2)Comparision operator
+
+3)Logical operator
+-----------------------------------------------------------
+
+Functions:
+
+1)MIN()
+
+2)MAX()
+
+3)count()
+
+4)avg()
+
+5)sum()
+
+----------------------------------------------------------
+
+select concat_ws(',',column1,column2,column3,.....)
+as any_name
+from table_name;

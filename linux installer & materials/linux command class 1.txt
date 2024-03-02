@@ -1,0 +1,62 @@
+1)pwd --- print working directory
+
+2)ls  ---list of folders 
+
+3)uname -a ---version
+
+4)ls -lrsh
+
+5)man ls
+
+6)mkdir name -- own directory
+
+7)cd name    -- change directory
+
+
+8)cd ..
+
+9)mkdir -p name
+
+10)cd te  (cd:change directory)
+ 
+11)cd ~
+
+12)cd ../..
+
+13)cd -
+
+14)rmdir name -- remove directory
+
+15)man mkdir --(man=manual page)
+
+16)vi name.txt
+
+   insert--> mode type esc button i 
+
+17)esc key + wq--> save the file
+
+18)cat name.txt
+
+19)cat name.txt |head -10
+
+20)cat name.txt |tail -10
+
+21)less name.txt -->few lines of the file 
+
+22)tail -f V 
+
+23)ubutun cmb prompt ip check command :ifconfig
+
+24)windows cmb prompt ip check command:ipconfig
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+
+---->MYSQL Installers in linux:
+
+     * we are using wget command and link
+  
+       Ex: 
+
+           wget https://dev.mysql.com/get/Downloads/MySQL-5.7/mysql-5.7.21-linux-glibc2.12-x86_64.tar.gz
+
+
+---->1)MySQL Developer ANSCIT (ORACLE,MS SQL,POSTGRESQL,OTher RDBMS-90%)
+
+---->2)Mysql Administration - Decent package
+
+---->I)MYsql: (100)
+
+        1)SQL(25)  -1
+
+        2)SQL programming(10)
+
+        3)Mysql Basic administration(25)-3
+
+        4)Mysql advanced administration(40)-5
+
+
+---->MySQL version 8.0
+
+ 
+
+---->II)Linux(100):
+
+        1)Linux Basic commands(60) - 2
+
+        2)shell programming(40)-4
+
+
+
+---->III) AWS:
+
+       1)IAM
+       2)EC2
+       3)S3
+       4)RDS
+
+
+

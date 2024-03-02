@@ -1,0 +1,34 @@
+1)root@LAPTOP-MKS4BNBQ:~# ps -ef|grep mysqld
+   
+    root        44    24  0 21:20 pts/0    00:00:00 grep --color=auto mysqld
+
+2)root@LAPTOP-MKS4BNBQ:~# service mysql3306 status
+     
+   * MySQL is not running
+
+3)root@LAPTOP-MKS4BNBQ:~# cd /mnt/data/mysql3306
+
+4)root@LAPTOP-MKS4BNBQ:/mnt/data/mysql3306# ls
+   
+   COPYING  README  bin  data  docs  include  lib  man  my.cnf  mysqltmp  share  support-files
+
+5)root@LAPTOP-MKS4BNBQ:/mnt/data/mysql3306# cd data
+
+6)root@LAPTOP-MKS4BNBQ:/mnt/data/mysql3306/data# ls
+    
+   auto.cnf  ib_buffer_pool  ib_logfile0  ib_logfile1  ibdata1  mysql  performance_schema  sys
+
+7)root@LAPTOP-MKS4BNBQ:/mnt/data/mysql3306/data# service mysql3306 status
+  
+   * MySQL is not running
+
+8)root@LAPTOP-MKS4BNBQ:/mnt/data/mysql3306/data# service mysql3306 stat
+  
+    Usage: mysql3306  {start|stop|restart|reload|force-reload|status}  [ MySQL server options ]
+
+9)root@LAPTOP-MKS4BNBQ:/mnt/data/mysql3306/data# service mysql3306 start
+  
+    Starting MySQL
+
+
+

@@ -1,0 +1,85 @@
+SQL:
+
+1)enum : 
+
+2)Primary key ,foriegn key
+
+3)how to change password in mysql server
+
+4)what is the joins
+
+5)flow mysql
+
+6)Triggers
+
+7)Mysql archeticture
+
+8)Mysql advantages and disadvantages
+
+9)Functions
+
+10) different types of tables in mysql
+
+11) Query logs
+
+12) DDL,DML,DCL
+
+13) Index number limit
+
+14) where n*n-1
+
+15) 
+
+=======================================================================================================================================================
+
+1)aws/azure
+
+2)Shell scripting and Shell Programming
+
+3)MQSQL 8.0
+
+4)NoSql(mongo db)
+
+5)Advanced linux
+
+
+===========================================================================================================================================================
+
+
+AWS,MySQL
+
+nosql
+
+Coforge
+
+json
+
+500 GB
+
+shell scripting: (linux:Bash scripting) {windows(Batch)}
+==================
+
+cron job 
+
+crontab calculater  
+
+crontab.guru 
+ 
+crone schudule with  
+
+
+MYSQL UPGRADE:
+-------------
+https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_UpgradeDBInstance.MySQL.htmlw
+
+
+
+MYSQL 8
+------------------
+
+Mysql 8 new features
+
+
+
+
+
